@@ -7,11 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Samantha Geitz | Chicago Web Developer</title>
-    <link rel="stylesheet" href="styles/main.min.231303b9.css"/>
+    <link rel="stylesheet" href="styles/main.min.de3359d2.css"/>
     <script src="scripts/vendor/modernizr.min.a52a8685.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
   </head>
-  <body data-3600="background:rgba(0, 0, 0, 0);" data-4200="background:rgba(34,160,205,1);" data-5000="" data-5400="background:rgba(0,0,0,1);">
+  <body data-0="background:rgba(255,255,255,0);" data-1000="" data-1400="background:rgba(255,201,102,1);" data-1900="background:rgba(255,255,255,0);" data-3600="background:rgba(0, 0, 0, 0);" data-4200="background:rgba(34,160,205,1);" data-5000="" data-5400="background:rgba(0,0,0,1);">
     <!-- home section -->
     <section id="home" data-0="background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);" data-200="background:rgba(0,0,0,1);color:rgb(255,255,255);">
       <div class="header-text">
@@ -40,6 +40,14 @@
       </div>
     </section>
 
+    <section id="quote">
+      <div class="row" data-1000="transform:scale(0) rotate(0deg);" data-1200="transform:scale(1) rotate(0deg);" data-1500="" data-1600="transform:scale(0) rotate(0deg);">
+        <div class="large-8 large-offset-2 columns text-center">
+          <p>Programmer - an organism that turns <img src="/images/coffee-icon.d8258b2f.png" height="40px" width="40px" alt=""> into software.<br><em> ~Author Unknown</em></p>
+        </div>
+      </div>
+    </section>
+
     <section id="work">
       <div class="row">
         <h2 class="text-center" data-1750="color:rgb(255,255,255)" data-2000="color[swing]:rgb(0,0,0);" data-3100="color:rgb(255,255,255)">Partners in Crime</h2>
@@ -61,7 +69,7 @@
     </section>
 
   <section id="resume">
-    <h2 class="text-center" data-2000="bottom:6000px" data-3000="bottom:0px">Rap Sheet</h2>
+    <h2 class="text-center" data-2000="bottom:8000px" data-3000="bottom:0px">Rap Sheet</h2>
             
     <div class="row" data-0="display:none" data-3400="display: block; left:100%" data-3600="left:0%">
       <h4>Education</h4>
@@ -196,27 +204,25 @@
 
   <section id="contact">
 
-    <div class="row" data-5700="opacity:0;" data-5900="opacity:1">
+    <div class="row" data-5500="opacity:0;" data-5700="opacity:1">
       <h1 class="text-center">Not really for hire</h1>
       <h3 text-center="">But I like talking to interesting people</h3>
 
-      <div class="small-4 small-offset-4 columns">
-        <div class="row">
-          <div class="small-4 columns">
-            <a href="http://twitter.com/samanthageitz" id="twitter">
-              <img src="/images/twitter.29220934.png" alt="">
-            </a>
-            </div>
-          <div class="small-4 columns">
-            <a href="http://github.com/samanthamichele7" class="github">
-              <img src="/images/github.06ce6bf8.png" alt="">
-            </a>
+      <div class="row">
+        <div class="small-4 columns">
+          <a href="http://twitter.com/samanthageitz" id="twitter">
+            <img src="/images/twitter.29220934.png" alt="">
+          </a>
           </div>
-          <div class="small-4 columns">
-            <a href="http://www.linkedin.com/pub/samantha-geitz/51/610/330/" class="linkedin">
-              <img src="/images/linkedin.b1df584b.png" alt=""> 
-            </a>
-          </div>
+        <div class="small-4 columns">
+          <a href="http://github.com/samanthamichele7" class="github">
+            <img src="/images/github.06ce6bf8.png" alt="">
+          </a>
+        </div>
+        <div class="small-4 columns">
+          <a href="http://www.linkedin.com/pub/samantha-geitz/51/610/330/" class="linkedin">
+            <img src="/images/linkedin.b1df584b.png" alt=""> 
+          </a>
         </div>
       </div>
     </div>
@@ -225,15 +231,11 @@
     <script src="scripts/main.min.201643e3.js"></script>
 
     <script type="text/javascript">
-      var s = skrollr.init({
-        edgeStrategy: 'set',
-        easing: {
-          WTF: Math.random,
-          inverted: function(p) {
-            return 1-p;
-          }
-        }
-      });
+      if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+          skrollr.init({
+              forceHeight: false
+          });
+      }
     </script>
   </body>
 </html>
